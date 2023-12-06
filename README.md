@@ -10,7 +10,9 @@ To create a datawarehouse of COVID-19 data on Cases & Deaths, Hospital Admission
  3. Developed a Data Pipeline in Azure Data Factory
     
        ◾ Fetched data from [GitHub](https://github.com/rashmi0007/health_data/tree/main/health_testdata) to Azure Blob Storage.
-          https://github.com/rashmi0007/health_data/blob/main/AdditionalDetail/pic12.JPG
+    
+          ![copyActivity](https://github.com/rashmi0007/health_data/assets/87612040/d131461a-49ac-45a8-84f9-92a2886a1acc)
+
     
        ◾ Processed data by applying diverse transformations as per requirements using:
     
