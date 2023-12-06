@@ -3,13 +3,14 @@
 To create a datawarehouse of COVID-19 data on Cases & Deaths, Hospital Admissions and more, develop a complete Data Pipeline using Azure Data Factory & Databricks.
 
 ## Getting Started
- 1. Cloned the project repository from [GitHub](https://github.com/rashmi0007/health_data/tree/main/health_testdata) .
+ 1. Clone the project repository from [GitHub](https://github.com/rashmi0007/health_data/tree/main/health_testdata) .
  
  2. Above line can be skipped by fetching data from ECDC API. 
  
  3. Developed a Data Pipeline in Azure Data Factory
     
        ◾ Fetched data from [GitHub](https://github.com/rashmi0007/health_data/tree/main/health_testdata) to Azure Blob Storage.
+          https://github.com/rashmi0007/health_data/blob/main/AdditionalDetail/pic12.JPG
     
        ◾ Processed data by applying diverse transformations as per requirements using:
     
