@@ -10,6 +10,7 @@ To create a datawarehouse of COVID-19 data on Cases & Deaths, Hospital Admission
  3. Developed a Data Pipeline in Azure Data Factory
     
        ◾ Fetched data from [GitHub](https://github.com/rashmi0007/health_data/tree/main/health_testdata) to Azure Blob Storage.
+    
 ![copyActivity](https://github.com/rashmi0007/health_data/assets/87612040/8ec646a1-d639-4f05-8364-58857a7948bc)
 
 ![CopySuccess](https://github.com/rashmi0007/health_data/assets/87612040/fe1a4e6d-4aa5-45ab-b93b-c6408fea3849)
@@ -27,7 +28,7 @@ To create a datawarehouse of COVID-19 data on Cases & Deaths, Hospital Admission
  
  5. Created Data Lake to store raw and processed data.
 
- 6. Developed a Data Warehouse in Azure SQL DB([DDL Command](https://github.com/rashmi0007/health_data/blob/main/AdditionalDetail/Hospital_DDL.SQL)and masked the sensitive data using Pyspark functionality 
+ 6. Developed a Data Warehouse in Azure SQL DB([DDL Command](https://github.com/rashmi0007/health_data/blob/main/AdditionalDetail/Hospital_DDL.SQL))and masked the sensitive data using Pyspark functionality 
  
  7. To get insights, the data from SQL DB was loaded to Power BI Desktop.
 
