@@ -18,12 +18,16 @@ To create a datawarehouse of COVID-19 data on Cases & Deaths, Hospital Admission
        ◾ Processed data by applying diverse transformations as per requirements using:
     
            ▪ Dataflows in Data Factory
+
+           ![Hospital_Datafloow](https://github.com/rashmi0007/health_data/assets/87612040/4917c8a6-36b2-4b73-9852-0b99d4360b1e)
+
+           ![admission_hospitalFlowData](https://github.com/rashmi0007/health_data/assets/87612040/8a19714d-17e3-4f7a-8169-5d68e684ed53)
     
            ▪ Pyspark in Azure Databrick
  
  5. Created Data Lake to store raw and processed data.
 
- 6. Developed a Data Warehouse in Azure SQL DB and masked the sensitive data using Pyspark functionality
+ 6. Developed a Data Warehouse in Azure SQL DB([DDL Command](https://github.com/rashmi0007/health_data/blob/main/AdditionalDetail/Hospital_DDL.SQL)and masked the sensitive data using Pyspark functionality 
  
  7. To get insights, the data from SQL DB was loaded to Power BI Desktop.
 
