@@ -23,7 +23,7 @@ To create a datawarehouse of COVID-19 data on Cases & Deaths, Hospital Admission
 -----------------------------------------------------------------------------------------------------------------------------
 ![admission_hospitalFlowData](https://github.com/rashmi0007/health_data/assets/87612040/8a19714d-17e3-4f7a-8169-5d68e684ed53)
     
-           ▪ Pyspark in Azure Databrick
+           ▪ Pyspark in Azure Databricks to write data in Azure SQL DB.
  
  5. Created Data Lake to store raw and processed data.
 
