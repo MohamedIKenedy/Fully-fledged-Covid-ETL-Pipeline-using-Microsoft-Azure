@@ -1,0 +1,159 @@
+{
+    "name": "pipeline1",
+    "properties": {
+        "activities": [
+            {
+                "name": "Copy Death cases data",
+                "type": "Copy",
+                "dependsOn": [],
+                "policy": {
+                    "timeout": "0.12:00:00",
+                    "retry": 0,
+                    "retryIntervalInSeconds": 30,
+                    "secureOutput": false,
+                    "secureInput": false
+                },
+                "userProperties": [],
+                "typeProperties": {
+                    "source": {
+                        "type": "DelimitedTextSource",
+                        "storeSettings": {
+                            "type": "HttpReadSettings",
+                            "requestMethod": "GET"
+                        },
+                        "formatSettings": {
+                            "type": "DelimitedTextReadSettings"
+                        }
+                    },
+                    "sink": {
+                        "type": "DelimitedTextSink",
+                        "storeSettings": {
+                            "type": "AzureBlobFSWriteSettings"
+                        },
+                        "formatSettings": {
+                            "type": "DelimitedTextWriteSettings",
+                            "quoteAllText": true,
+                            "fileExtension": ".txt"
+                        }
+                    },
+                    "enableStaging": false,
+                    "translator": {
+                        "type": "TabularTranslator",
+                        "typeConversion": true,
+                        "typeConversionSettings": {
+                            "allowDataTruncation": true,
+                            "treatBooleanAsNumber": false
+                        }
+                    }
+                },
+                "inputs": [
+                    {
+                        "referenceName": "health_data_case_deaths",
+                        "type": "DatasetReference",
+                        "parameters": {
+                            "relative_URL1": {
+                                "value": "@variables('death_cases')",
+                                "type": "Expression"
+                            }
+                        }
+                    }
+                ],
+                "outputs": [
+                    {
+                        "referenceName": "health_dataingestion1",
+                        "type": "DatasetReference",
+                        "parameters": {
+                            "filename1": "death_cases.csv"
+                        }
+                    }
+                ]
+            },
+            {
+                "name": "Copy hospital admission data",
+                "type": "Copy",
+                "dependsOn": [
+                    {
+                        "activity": "Copy Death cases data",
+                        "dependencyConditions": [
+                            "Completed"
+                        ]
+                    }
+                ],
+                "policy": {
+                    "timeout": "0.12:00:00",
+                    "retry": 0,
+                    "retryIntervalInSeconds": 30,
+                    "secureOutput": false,
+                    "secureInput": false
+                },
+                "userProperties": [],
+                "typeProperties": {
+                    "source": {
+                        "type": "DelimitedTextSource",
+                        "storeSettings": {
+                            "type": "HttpReadSettings",
+                            "requestMethod": "GET"
+                        },
+                        "formatSettings": {
+                            "type": "DelimitedTextReadSettings"
+                        }
+                    },
+                    "sink": {
+                        "type": "DelimitedTextSink",
+                        "storeSettings": {
+                            "type": "AzureBlobFSWriteSettings"
+                        },
+                        "formatSettings": {
+                            "type": "DelimitedTextWriteSettings",
+                            "quoteAllText": true,
+                            "fileExtension": ".txt"
+                        }
+                    },
+                    "enableStaging": false,
+                    "translator": {
+                        "type": "TabularTranslator",
+                        "typeConversion": true,
+                        "typeConversionSettings": {
+                            "allowDataTruncation": true,
+                            "treatBooleanAsNumber": false
+                        }
+                    }
+                },
+                "inputs": [
+                    {
+                        "referenceName": "health_data_hospital_admission",
+                        "type": "DatasetReference",
+                        "parameters": {
+                            "relative_URL2": {
+                                "value": "@variables('hospital_admissions')",
+                                "type": "Expression"
+                            }
+                        }
+                    }
+                ],
+                "outputs": [
+                    {
+                        "referenceName": "health_dataingestion1",
+                        "type": "DatasetReference",
+                        "parameters": {
+                            "filename1": "hospital_admissions.csv"
+                        }
+                    }
+                ]
+            }
+        ],
+        "variables": {
+            "hospital_admissions": {
+                "type": "String",
+                "defaultValue": "hospital_admissions.csv"
+            },
+            "death_cases": {
+                "type": "String",
+                "defaultValue": "cases_deaths.csv"
+            }
+        },
+        "annotations": [],
+        "lastPublishTime": "2023-08-27T10:41:58Z"
+    },
+    "type": "Microsoft.DataFactory/factories/pipelines"
+}
