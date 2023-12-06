@@ -1,5 +1,5 @@
 # Covid-19 Health Care Data Engineering Project
-## Project Aim:
+## About Project:
 To create a datawarehouse of COVID-19 data on Cases & Deaths, Hospital Admissions and more, develop a complete Data Pipeline using Azure Data Factory & Databricks.
 
 ## Getting Started
@@ -8,10 +8,13 @@ To create a datawarehouse of COVID-19 data on Cases & Deaths, Hospital Admission
  2. Above line can be skipped by fetching data from ECDC API. 
  
  3. Developed a Data Pipeline in Azure Data Factory
+    
        ◾ Fetched data from [GitHub](https://github.com/rashmi0007/health_data/tree/main/health_testdata) to Azure Blob Storage.
     
        ◾ Processed data by applying diverse transformations as per requirements using:
+    
            ▪ Dataflows in Data Factory
+    
            ▪ Pyspark in Azure Databrick
  
  5. Created Data Lake to store raw and processed data.
