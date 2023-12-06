@@ -19,10 +19,9 @@ To create a datawarehouse of COVID-19 data on Cases & Deaths, Hospital Admission
        ◾ Processed data by applying diverse transformations as per requirements using:
     
            ▪ Dataflows in Data Factory
+![Hospital_Datafloow](https://github.com/rashmi0007/health_data/assets/87612040/4917c8a6-36b2-4b73-9852-0b99d4360b1e)
 
-           ![Hospital_Datafloow](https://github.com/rashmi0007/health_data/assets/87612040/4917c8a6-36b2-4b73-9852-0b99d4360b1e)
-
-           ![admission_hospitalFlowData](https://github.com/rashmi0007/health_data/assets/87612040/8a19714d-17e3-4f7a-8169-5d68e684ed53)
+![admission_hospitalFlowData](https://github.com/rashmi0007/health_data/assets/87612040/8a19714d-17e3-4f7a-8169-5d68e684ed53)
     
            ▪ Pyspark in Azure Databrick
  
