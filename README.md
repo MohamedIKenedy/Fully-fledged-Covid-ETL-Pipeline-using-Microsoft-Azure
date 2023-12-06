@@ -11,6 +11,9 @@ To create a datawarehouse of COVID-19 data on Cases & Deaths, Hospital Admission
     
        ◾ Fetched data from [GitHub](https://github.com/rashmi0007/health_data/tree/main/health_testdata) to Azure Blob Storage.
 ![copyActivity](https://github.com/rashmi0007/health_data/assets/87612040/8ec646a1-d639-4f05-8364-58857a7948bc)
+
+![CopySuccess](https://github.com/rashmi0007/health_data/assets/87612040/fe1a4e6d-4aa5-45ab-b93b-c6408fea3849)
+
         
        ◾ Processed data by applying diverse transformations as per requirements using:
     
