@@ -1,6 +1,6 @@
 # Covid-19 Health Care Data Engineering Project
 ## About Project:
-To create a datawarehouse of COVID-19 data on Cases & Deaths, Hospital Admissions and more, develop a complete Data Pipeline using Azure Data Factory & Databricks.
+Created a Data Warehouse of COVID-19 data on Cases & Deaths, Hospital Admissions and more, develop a complete Data Pipeline using Azure Data Factory & Databricks. Data Visualization was made using PowerBi.
 
 ### Solution Architecture:
 ![Covid19_DataFlow_diagram](https://github.com/rashmi0007/health_data/assets/87612040/9ec20cf6-27c6-426d-a87e-40b7eb64dfa6)
