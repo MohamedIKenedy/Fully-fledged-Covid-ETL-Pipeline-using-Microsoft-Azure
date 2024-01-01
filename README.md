@@ -32,7 +32,7 @@ Created a Data Warehouse of COVID-19 data on Cases & Deaths, Hospital Admissions
 
  6. Developed a Data Warehouse in Azure SQL DB([DDL Command](https://github.com/rashmi0007/health_data/blob/main/AdditionalDetail/Hospital_DDL.SQL) & [Pyspark_code_in_SQL](https://github.com/rashmi0007/health_data/blob/main/code_to_write_in_SQL_DB.ipynb)) and masked the sensitive data using Pyspark functionality([Pyspark code](https://github.com/rashmi0007/health_data/blob/main/masking_dataWithPyspark_%26_with_SQL.ipynb))
  
- 7. To get insights, the data from SQL DB was loaded to Power BI Desktop.
+ 7. To get insights out of it, data from SQL DB was loaded into Power BI Desktop.
     
 ![Health_care_report](https://github.com/rashmi0007/health_data/assets/87612040/58a9cd35-494c-4146-ba29-7f78ab39216a)
 
