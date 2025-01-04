@@ -6,7 +6,7 @@ Created a Data Warehouse of COVID-19 data on Cases & Deaths, Hospital Admissions
 ![Covid19_DataFlow_diagram](https://github.com/rashmi0007/health_data/assets/87612040/9ec20cf6-27c6-426d-a87e-40b7eb64dfa6)
 
 ### Getting Started
- 1. Cloned the project repository from [GitHub](https://github.com/rashmi0007/health_data/tree/main/health_testdata) .
+ 1. Cloned the project repository from [GitHub](https://github.com/MohamedIKenedy/Fully-fledged-Covid-ETL-Pipeline-using-Microsoft-Azure/tree/2a51a971767939eb335fde1b3707bdf54371cbc5/health_testdata).
  
  2. Above line can be skipped by fetching data from ECDC API. 
  
